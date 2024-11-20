@@ -1,0 +1,181 @@
+.header {
+  position:fixed;
+  background-color: #0F6655;
+  padding: 20px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo :hover{
+  display: flex;
+  transform: scale(1.05);
+}
+
+.hamburger-menu {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger-menu svg {
+  width: 30px;
+  height: 50px;
+  fill: white;
+}
+
+.hamburger-menu svg rect {
+  fill: currentColor;
+  width: 25px;
+  height: 2px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0F6655;
+  color: white;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+  z-index: 10;
+}
+
+.mobile-menu.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  overflow: hidden;
+}
+
+.mobile-menu a:hover {
+  transform: scale(1.15);
+}
+
+.mobile-menu p {
+  font-size: 1.2rem;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.mobile-menu a {
+  display: block;
+  margin: 50px 0;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dismiss-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.dismiss-button svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.dismiss-button svg path {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+  transform: scale(1.15);
+}
+
+.hamburger-menu svg, .dismiss-button svg {
+  fill: white;
+  stroke: white;
+}
+
+.hamburger-menu, .dismiss-button {
+  color: white;
+}
+
+.mobile-menu {
+  z-index: 9;
+}
+
+.hamburger-menu svg {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+      display: none;
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+
+  .mobile-menu.active {
+      display: block;
+  }
+}
+
+.social-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-logo {
+  display: inline-block;
+}
+
+.social-logo img {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+
+.social-logo:hover {
+  transform: scale(1.25);
+}

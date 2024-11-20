@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular Finance Newswire</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="liststyle.css">
+  <link rel="stylesheet" href="headerstyles.css">
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="/icons/full-mfn-white.svg" alt="Modular Finance Logo">
+    </div>
+    <button class="hamburger-menu" aria-label="Toggle menu">
+      <svg class="hamburger-icon" width="30" height="50" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="5" width="25" height="2" fill="currentColor" />
+        <rect x="0" y="12" width="25" height="2" fill="currentColor" />
+        <rect x="0" y="19" width="25" height="2" fill="currentColor" />
+      </svg>
+      <svg class="dismiss-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <path d="M10 5 L20 15 L10 25" stroke="currentColor" stroke-width="3" />
+      </svg>
+    </button>
+    <nav class="nav">
+      <a href="#">Om oss</a>
+      <a href="#">Kontakt</a>
+      <a href="#">Login</a>
+    </nav>
+  </div>
+</header>
+
+  <div class="mobile-menu">
+    <a href="#">Pressmeddelanden</a>
+    <a href="#">Kontakt</a>
+    <a href="#">Om oss</a>
+    <a href="#">Privacy Policy</a>
+    <p>Login</p>
+    <div class="social-logos">
+      <a href="#" class="social-logo">
+        <img src="icons/google-logo.png" alt="Google" />
+      </a>
+      <a href="#" class="social-logo">
+        <img src="icons/x-logo.png" alt="X (Twitter)" />
+      </a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <h2>MODULAR FINANCE</h2>
+      <p class="subtitle">NEWSWIRE</p>
+      <p class="description">Nordens mest användarvänliga plattform för<br>pressmeddelanden och IR-kommunikation</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Filtrera på nyckelord...">
+        <button class="search-button">
+          <img src="icons/search.png" alt="Search Icon" width="16" height="16">
+        </button>
+      </div>
+      <div class="filters">
+        <button class="list-button">Listor <span class="chevron"><img src="icons/caret-down.png" alt="Caret Down" width="12" height="12"></span></button>
+        <button class="sector-button">Sektor <span class="chevron"><img src="icons/caret-down.png" alt="Caret Down" width="12" height="12"></span></button>
+        <button class="type-button">Typ <span class="chevron"><img src="icons/caret-down.png" alt="Caret Down" width="12" height="12"></span></button>
+        <button class="language-button">Språk <span class="chevron"><img src="icons/caret-down.png" alt="Caret Down" width="12" height="12"></span></button>
+        <button class="date-button">Datum <span class="chevron"><img src="icons/caret-down.png" alt="Caret Down" width="12" height="12"></span></button>
+        <button class="numbered-list-button">
+          Populära
+          <span class="chevron"><img src="icons/caret-down.png" alt="Caret Down" width="12" height="12"></span>
+        </button>
+        <button class="clear-button">Rensa</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="settings-container">
+    <div class="date-container">
+      <img src="icons/clock.png" alt="Clock" class="clock-icon" />
+      <p></p>
+    </div>
+    <div class="language-links">
+      <a href="#">Svenska</a> | <a href="#">English</a>
+    </div>
+  </div>
+  
+  <div id="list-placeholder"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <p>Intresserad av platformen MFN för nyhetsdistribution?</p>
+        <div class="footer-info-links">
+          <a href="#" class="footer-link">Läs mer</a> | <a href="#" class="footer-link">Boka demo</a>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="brand-info">
+          <img src="icons/mf-logo-white.svg" alt="Modular Finance Logo" class="footer-logo">
+        </div>
+        <div class="footer-middle">
+          <a href="#" class="footer-link">Hemsida</a>
+          <a href="#" class="footer-link">Karriär</a>
+          <a href="#" class="footer-link">LinkedIn</a>
+        </div>
+        <div class="footer-middle">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Login</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
